@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search docs test</title>
+    <style>
+	    body {
+		    font-family: arial;
+		    background-color: #EEE;
+		    
+	    }
+	    
+	    ul {
+			margin: 0;
+			padding: 0;
+		}
+	    li {
+		    padding: 6px;
+		    list-style: none;
+		    margin-bottom: 10px;
+		    background-color: #FFF;
+	    }
+	    li.last {
+		    background-color: transparent;
+	    }
+	    
+	    input#search {
+		    font-size: 20px;
+		    padding: 8px;
+		    margin-bottom: 20px;
+		}
+    </style>
+</head>
+<body>
+    <div><h2>How Can We Help?</h2><input id="search" type="text" placeholder="Search the knowledge base..." size="60"></div>
+        <div class="list-container">
+            <span id="message" hidden>Nothing was found..</span>
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" defer></script>
+    <script src="./main.js" defer></script>
+</body>
+</html>
